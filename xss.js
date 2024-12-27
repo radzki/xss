@@ -1,5 +1,5 @@
 function tiago() {
-  alert("Trollados!");
+  alert("Trollados by rdz");
 }
 
 document.addEventListener('DOMContentLoaded', function () {
