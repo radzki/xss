@@ -1,9 +1,13 @@
+function getElementByXpath(path) {
+  return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+}
+
 function removeNonAlphanumeric(inputString) {
     return inputString.replace(/[^A-Z\d\s]/gi, '');
 };
 
 function getAmigoSecreto() {
-   return $x('/html/body/div[2]/div[6]/div/div/div/div/div[2]/div[1]/form[3]/div/div/p/script/text()')[0].wholeText.split('amigoTireiAberto')[1].split('strong')[1]
+   return getElementByXpath('/html/body/div[2]/div[6]/div/div/div/div/div[2]/div[1]/form[3]/div/div/p/script/text()')[0].wholeText.split('amigoTireiAberto')[1].split('strong')[1]
 };
 
 function tiago() {
