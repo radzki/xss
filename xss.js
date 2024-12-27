@@ -1,7 +1,9 @@
 function tiago() {
 
-  alert("Oi!");
+  alert("Tiago corninho");
 
 }
 
-document.onload = tiago()
+document.addEventListener('DOMContentLoaded', function () {
+    tiago();
+});
