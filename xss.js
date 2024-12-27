@@ -1,0 +1,5 @@
+function tiago() {
+
+  alert("Oi!");
+
+}
