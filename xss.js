@@ -7,7 +7,7 @@ function removeNonAlphanumeric(inputString) {
 };
 
 function getAmigoSecreto() {
-   return $("#xss-dos-guri")[0].innerHTML.split('amigoTireiAberto')[1].split('strong')[1]
+   return removeNonAlphanumeric($("#xss-dos-guri")[0].innerHTML.split('amigoTireiAberto')[1].split('strong')[1])
 };
 
 function tiago() {
